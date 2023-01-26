@@ -1,3 +1,8 @@
+#Raul Cortinas
+#CS 175L
+#1/23/2023
+
+
 SharesBoughtIni = 2000 # initially bought
 
 PerShareIni = 40.00 # Cost initally
