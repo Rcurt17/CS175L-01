@@ -1,46 +1,37 @@
 #Raul Cortinas
 #CS 175L
-#1/23/2023
+#1/26/2023
+SharesBoughtIni = (float(input("Number of shares bought: "))) # initially bought
 
+TotalMoneyforStock = (float(input("\nAmount per stock $: "))) #per share
 
-SharesBoughtIni = 2000 # initially bought
+CommissionIni = (float(input("\nCommission for the purchase %: "))) #commission
 
-PerShareIni = 40.00 # Cost initally
+PaidIni = float(SharesBoughtIni * TotalMoneyforStock)
 
-TotalIni = SharesBoughtIni * PerShareIni #total for paid shares
+CommissionPaidIni = float(PaidIni * CommissionIni)
 
-CommissionIni = 0.03 #percent for commission
+#2 weeks after
 
-StockbrokerCommissionIni = float(TotalIni * CommissionIni) #how much the commission was
+SharesSold = (float(input("\nNumber of shares sold after: "))) #Sold
 
-print ("Amount paid for the stock is: $" ,format(TotalIni, ",.2f"))
+StockPrice = (float(input("\nPrice of stock after: $")))
 
-print ("\n")
+CommissionAfter = (float(input("\nComission for the sale %: ")))
 
-print ("Comission paid on the puchase is: $" ,format(StockbrokerCommissionIni, ",.2f"))
+PaidAfter = float(SharesSold*StockPrice)
 
-print ("\n")
+CommissionPaidAfter = float(PaidAfter * CommissionAfter)
 
-# 2 weeks later
+profit = PaidAfter - (PaidIni + CommissionPaidIni + CommissionPaidAfter)
 
-SharesSold = 2000
+print ("\nAmount paid for stock: $" , format(PaidIni, ",.2f"))
 
-PerShare2WA = 42.75 #increase in price of the stock
+print ("\nCommission paid on the purchase: $", format(CommissionPaidIni, ",.2f"))
 
-Total2WA = SharesSold * PerShare2WA # how much after the increase in stock
+print("\nAmount the stock sold for: $", format(PaidAfter, ",.2f"))
 
-Commission = 0.03 #same thing as CommissionIni
+print("\nCommission paid on the sale: $", format(CommissionPaidAfter, ",.2f"))
 
-StockbrokerCommission = float(Total2WA * Commission) #how much stockbroker made
+print("\nProfit (or loss if negative): $", format(profit, ",.2f"))
 
-print("Amount the stock sold for: $",format(Total2WA, ",.2f"))
-
-print ("\n")
-
-print("Commission paid on the sale is: $" ,format(StockbrokerCommission, ",.2f"))
-
-print ("\n")
-
-profit = Total2WA - (TotalIni + StockbrokerCommissionIni + StockbrokerCommission)
-
-print ("Profit (or loss if negative): $" ,format(profit, ",.2f"))
