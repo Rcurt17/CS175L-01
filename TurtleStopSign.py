@@ -19,6 +19,7 @@ for m in range(sides):
 turtle.end_fill()
 
 turtle.penup()
-turtle.goto(-175, -75)
+turtle.goto(-200, -75)
 turtle.color('white')
 turtle.write("STOP", font=("Arial", 150))
+turtle.done()
