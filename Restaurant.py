@@ -33,12 +33,13 @@ while reask == True:
     print("Here are your restaurant choices:\n")
     if not Vegetarian and not Vegan and not GlutenFree:
         print("Joe's Gourmet Burgers")
-    elif not Vegan and not GlutenFree:\
+    if not Vegan and not GlutenFree:
             print("Mama's Fine Italian")
-    elif not Vegan:
+    if not Vegan:
         print("Main Street Pizza")
     print("CornerCafe")
     print("Chef's Kitchen")
+
 
     input = input("\nWould you like to go again? ")
     inputAnswer = input.lower()
