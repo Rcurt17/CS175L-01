@@ -1,3 +1,8 @@
+#CS175L
+#Raul Cortinas
+#2/13/2023
+#Turtle Stop Sign
+
 import turtle
 
 length = 200
