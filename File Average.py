@@ -15,9 +15,9 @@ def main():
 
         counter += 1
 
-        print('I read in ', str(counter), end='')
-        print('number(s) Current number is:' , float(nums), end='')
-        print(' Total is: ', end='')
+        print('I read in  ', str(counter), end='')
+        print('number(s) Current number is:    ' , float(nums), end='')
+        print(' Total is:    ', end='')
         total += float(nums)
         print(total)
 
