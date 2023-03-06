@@ -26,7 +26,7 @@ def main():
         print('Average is: ',  avg)
 
     except IOError:
-        print("Could not find file, please make sure correct file name is being opened")
+        print("\nCould not find file, please make sure correct file name is being opened")
 
     except ValueError:
         print("\nCheck file for any strings or non integer characters")
