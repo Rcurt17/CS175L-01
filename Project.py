@@ -7,7 +7,7 @@ import re
 
 def main():
     # Coded by Raul Cortinas
-    best_sellers_file = open('/Users/rcurt17/Downloads/bestsellers.txt', 'r')
+    best_sellers_file = open('bestsellers.txt', 'r')
 
     books = 0
 
@@ -48,7 +48,7 @@ def main():
 
 def year_range():
     # Coded by Raul Cortinas
-    file = open('/Users/rcurt17/Downloads/bestsellers.txt', 'r')
+    file = open('bestsellers.txt', 'r')
 
     start_year = str(input("Enter the start year: "))
     end_year = str(input("Enter the end year: "))
@@ -69,7 +69,7 @@ def year_range():
 
 def month_and_year():
     # Coded by Raul Cortinas
-    file = open('/Users/rcurt17/Downloads/bestsellers.txt', 'r')
+    file = open('bestsellers.txt', 'r')
 
     x = True
 
@@ -102,7 +102,7 @@ def month_and_year():
 
 
 def search_for_author():
-    file = open('/Users/rcurt17/Downloads/bestsellers.txt', 'r')
+    file = open('bestsellers.txt', 'r')
 
     # This is done by Thomas Farrell
 
@@ -132,7 +132,7 @@ def search_for_author():
 
 
 def search_for_title():
-    infile = open('/Users/rcurt17/Downloads/bestsellers.txt', 'r')
+    infile = open('bestsellers.txt', 'r')
 
     # Coded by Michael C Cozzolino
 
