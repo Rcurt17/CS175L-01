@@ -63,6 +63,9 @@ def year_range():
         if start_year <= year <= end_year:
             print(f'"{line[0]}" by {line[1]} published: {line[3]}')
 
+    if start_year != year or start_year != end_year:
+        print("No books were published in this year range.")
+
 
 def month_and_year():
     # Coded by Raul Cortinas
@@ -88,6 +91,10 @@ def month_and_year():
                     print(f'"{line[0]}" by {line[1]} published: {line[3]}')
 
             x = False
+
+            if month_input != int(month) or year_input != int(year):
+                print("No books were published in this month or year")
+
         except ValueError:
             print("\nMust be an integer or a digit for both inputs.")
 
