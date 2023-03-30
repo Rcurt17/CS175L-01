@@ -1,6 +1,10 @@
 import re
 
 
+# CS 175L
+# Coded by Raul C, Thomas F, Michael C
+# 3/30/2023
+
 def main():
     # Coded by Raul Cortinas
     best_sellers_file = open('/Users/rcurt17/Downloads/bestsellers.txt', 'r')
@@ -82,6 +86,7 @@ def month_and_year():
 
                 if month_input == int(month) and year_input == int(year):
                     print(f'"{line[0]}" by {line[1]} published: {line[3]}')
+
             x = False
         except ValueError:
             print("\nMust be an integer or a digit for both inputs.")
@@ -151,7 +156,6 @@ def search_for_title():
     print()
 
     for i in match_list:
-
         print(i)
 
 
