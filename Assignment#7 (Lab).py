@@ -4,15 +4,29 @@ world_series = open('/Users/rcurt17/Desktop/CS175Work/WorldSeriesWinners.txt', '
 x = True
 while x:
     count = 0
+
     phrase = str(input("Enter the name of a team: "))
 
     with open('WorldSeriesWinners.txt', 'r') as file:
+
         for line in file:
             line = line.rstrip('\n')
             if phrase.upper() in line.upper():
+                print(line)
                 count += 1
 
-    print(f"The team '{phrase}' appears {count} times in the file '{'WorldSeries.txt'}'.")
+    count_specific = 0
+
+    phrase_specific = str(input("Enter the name of the team you would like to focus on: "))
+
+    with open('WorldSeriesWinners.txt', 'r') as file:
+
+        for line in file:
+            line = line.rstrip('\n')
+            if phrase_specific.upper() in line.upper():
+                count_specific += 1
+
+    print(f"The team '{phrase_specific}' appears {count_specific} times in the file '{'WorldSeries.txt'}'.")
 
     y = True
     while y:
